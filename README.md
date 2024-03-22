@@ -18,3 +18,18 @@ cmake ../
 cmake --build blank-window 
 ./blank-window/blank-window
 ```
+
+## torus-window
+
+В піддиректорії torus-window розміщений приклад відмальовування каркасу бублика на чорному фоні з ротацією в залежності від часу.
+
+Щоб збудувати і запустити програму необхідно пройти в командному рядку у корінь проекту і ввести наступні команди:
+
+```
+rm -fr build
+mkdir -vp build
+cd build
+cmake ../ 
+cmake --build torus-window 
+./blank-window/blank-window
+```
