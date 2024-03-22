@@ -12,3 +12,5 @@ set(CMAKE_CXX_STANDARD 17)
 
 find_package(GLUT REQUIRED)
 find_package(OpenGL REQUIRED)
+
+add_subdirectory(blank-window)
