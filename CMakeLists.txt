@@ -13,5 +13,10 @@ set(CMAKE_CXX_STANDARD 17)
 find_package(GLUT REQUIRED)
 find_package(OpenGL REQUIRED)
 
+include_directories(${GLUT_INCLUDE_DIRS})
+
+link_libraries(${GLUT_LIBRARIES} ${OPENGL_LIBRARIES})
+
 add_subdirectory(blank-window)
 add_subdirectory(torus-window)
+add_subdirectory(teapot-window)
