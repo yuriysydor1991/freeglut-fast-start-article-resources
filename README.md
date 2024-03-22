@@ -1,8 +1,20 @@
 # FreeGLUT - швидкий старт
 
-Вихідний код для статті на kytok.org.ua про бібліотеку FreeGLUT.
+Вихідний код для статті на http://www.kytok.org.ua/post/freeglut-and-opengl-lehkyj-start про бібліотеку FreeGLUT.
 
 # Наявні програми
+
+Щоб команди побудови працювали, спочатку необхідно склонувати (або завантажити) проект на свій комп'ютер за допомогою команди:
+
+```
+git clone https://github.com/yuriysydor1991/freeglut-fast-start-article-resources.git
+```
+
+Після чого зайти у директорію проекту за допомогою команди
+
+```
+cd freeglut-fast-start-article-resources
+```
 
 ## blank-window
 
@@ -31,5 +43,5 @@ mkdir -vp build
 cd build
 cmake ../ 
 cmake --build torus-window 
-./blank-window/blank-window
+./torus-window/torus-window
 ```
