@@ -15,28 +15,43 @@ constexpr const unsigned int W_DEFAULT_HEIGHT = 500;
 // функція ініціалізації параметрів OpenGL
 void init()
 {
+    // встановлюємо колір очищення піксеоів екрану
     glClearColor (0.0, 0.0, 0.0, 0.0);
-    glShadeModel (GL_FLAT);
 }
 
 // Процедура відображення OpenGL сцени
 void display()
 {
+    // очищуємо буфер пікселів екрану
+    // раніше встановленим за допомогою glClearColor
     glClear(GL_COLOR_BUFFER_BIT);
+    // зберігаємо поточну матрицю у стеку матриць
+    // і дублюємо її для редагування
     glPushMatrix();
 
+    // ось тут відображення об'єктів і сцени
+
+    // витягуємо оригінальну матрицю зі стеку матриць
     glPopMatrix();
+    // підміняємо буфер для нових команд
     glutSwapBuffers();
 }
 
 // Процедура зміни розміру вікна
 void reshape(int w, int h)
 {
+    // встановлюємо розмір вікна OpenGL
     glViewport (0, 0, (GLsizei) w, (GLsizei) h);
+    // встановлюжмо режим матриці у GL_PROJECTION
     glMatrixMode(GL_PROJECTION);
+    // Встановлюємо матрицю ідентичності
     glLoadIdentity();
-    glOrtho(-50.0, 50.0, -50.0, 50.0, -1.0, 1.0);
+
+    // Встановлюємо параметри проекції
+    glOrtho(0, w, 0, h, -1.0, 100.0);
+    // Встановлюємо режим огляду моделі
     glMatrixMode(GL_MODELVIEW);
+    // завантажуємо матрицю ідентичності
     glLoadIdentity();
 }
 
