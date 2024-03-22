@@ -46,3 +46,17 @@ cmake --build torus-window
 ./torus-window/torus-window
 ```
 
+## teapot-window
+
+В даній директорії розміщений приклад відмальовування 3D-чайника. 
+
+Щоб збудувати даний прклад необхідно з кореня директорії проекту виконати наступні команди:
+
+```
+rm -fr build
+mkdir -vp build
+cd build
+cmake ../ 
+cmake --build teapot-window 
+./torus-window/teapot-window
+```
