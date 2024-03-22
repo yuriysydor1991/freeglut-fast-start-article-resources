@@ -36,8 +36,10 @@ constexpr const unsigned int W_DEFAULT_HEIGHT = 500;
 // функція ініціалізації параметрів OpenGL
 void init()
 {
-    // встановлюємо колір очищення піксеоів екрану
+    // встановлюємо колір очищення пікселів екрану
     glClearColor (0.0, 0.0, 0.0, 0.0);
+    // вмикаємо розпізнавання глибини
+    glEnable(GL_DEPTH_TEST);
 }
 
 // Процедура відображення OpenGL сцени
@@ -45,7 +47,8 @@ void display()
 {
     // очищуємо буфер пікселів екрану
     // раніше встановленим за допомогою glClearColor
-    glClear(GL_COLOR_BUFFER_BIT);
+    // і буферу шлибини
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     // зберігаємо поточну матрицю у стеку матриць
     // і дублюємо її для редагування
     glPushMatrix();
@@ -69,7 +72,7 @@ void reshape(int w, int h)
     glLoadIdentity();
 
     // Встановлюємо параметри проекції
-    glOrtho(0, w, 0, h, -1.0, 100.0);
+    glOrtho(-w/2.f, w/2.f, -h/2.f, h/2.f, -1.0, 100.0);
     // Встановлюємо режим огляду моделі
     glMatrixMode(GL_MODELVIEW);
     // завантажуємо матрицю ідентичності
