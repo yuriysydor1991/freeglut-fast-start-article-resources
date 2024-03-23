@@ -60,3 +60,19 @@ cmake ../
 cmake --build teapot-window 
 ./torus-window/teapot-window
 ```
+
+## vertex-cube-window
+
+Даний приклад призначений для малювання і текстурування 3D-об'єкту, а саме куба на екрані.
+
+Щоб побудувати даний приклад необхідно скористатись наступними командами.
+
+```
+git clone https://github.com/yuriysydor1991/freeglut-fast-start-article-resources.git
+cd freeglut-fast-start-article-resources
+mkdir -vp build
+cd build
+cmake ../
+cmake --build vertex-cube-window
+./vertex-cube-window/vertex-cube-window
+```

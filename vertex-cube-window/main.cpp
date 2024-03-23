@@ -89,6 +89,7 @@ void recalculateSpin()
 void init()
 {
     // встановлюємо колір очищення пікселів екрану
+    // детальніше про функцію у http://www.kytok.org.ua/post/glclearcolor?
     glClearColor (0.0, 0.0, 0.0, 1.0);
 
     // Детальніше про функцію glEnable у статті http://www.kytok.org.ua/post/glenable
