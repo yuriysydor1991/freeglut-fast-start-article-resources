@@ -75,7 +75,7 @@ void recalculateSpin()
 
     // якщо змінити дільник тоді зміниться швидкість обертання
     spin += deltaTime / 10;
-    spin2 += deltaTime / 10;
+    spin2 += deltaTime / 5;
 
     // обрізаємо значення обертань у проміжок [0,360]
     if (spin > 360) { spin -= 360; }
