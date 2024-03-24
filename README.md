@@ -1,8 +1,6 @@
 # FreeGLUT - швидкий старт
 
-Вихідний код для статті на http://www.kytok.org.ua/post/freeglut-and-opengl-lehkyj-start про бібліотеку FreeGLUT. Також більший приклад по відмальовуванню текстурованого об'єкта за адресою http://www.kytok.org.ua/post/freeglut-and-opengl-malyuiemo-teksturovanyj-obiekt-kub 
-
-Щоб команди побудови працювали, спочатку необхідно клонувати (або завантажити) проект на свій комп'ютер за допомогою команди:
+Вихідний код для статті на http://www.kytok.org.ua/post/freeglut-and-opengl-lehkyj-start про бібліотеку FreeGLUT. Також більший приклад по відмальовуванню текстурованого об'єкта за адресою http://www.kytok.org.ua/post/freeglut-and-opengl-malyuiemo-teksturovanyj-obiekt-kub
 
 # Встановлення необхідних пакунків і програм
 
@@ -17,6 +15,8 @@ sudo apt-get install -y cmake g++ make git freeglut3 freeglut3-dev mesa-common-d
 Для інших систем можливо використання наявного менеджера пакунків і пошуком відповідних назв необхідних програм.
 
 # Отримання копії проекту прикладів
+
+Щоб команди побудови працювали, спочатку необхідно клонувати (або завантажити) проект на свій комп'ютер за допомогою команди:
 
 ```
 git clone https://github.com/yuriysydor1991/freeglut-fast-start-article-resources.git
